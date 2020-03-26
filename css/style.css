@@ -186,7 +186,7 @@ footer{
 
 /*Mobile*/
 @media (max-width : 700px){
-	body{
+	body,footer,section{
 		width: auto;
 		margin: 0;
 		padding: 0;
@@ -203,7 +203,8 @@ footer{
 	object,
 	embed,
 	video,
-	section {
+	section,
+	footer {
 		max-width: 100%;
 	}
 	img {
@@ -216,7 +217,9 @@ footer{
 		tr,
 		code,
 		pre,
-		samp {
+		samp,
+		section,
+		p,footer {
 			-webkit-hyphens: auto; /* césure propre */
 			-moz-hyphens: auto;
 			hyphens: auto;
@@ -241,7 +244,39 @@ footer{
 			width: calc(100% / 3 - 18px);
 		}
 	
-		nav ul li{
-			width: calc(100% / 3 - 20px);
+		ul li{
+		width: auto;
+		margin: 0;
+		padding: 0;
+			
+		}
+		.grid-img > ul{
+			background: #fafafa;
+			padding: .5rem;
+		}
+		.grid-img > ul li:nth-child(2){
+			margin: 0.5rem;
+		}
+		.grid-img > ul li{
+			display: block;
+			width: calc(100% / 3 - 0.35rem);
+		}
+		.grid-img > ul li img{
+			display: block;
+			width: 100%;
+		}
+		.grid-icone{
+	
+		}
+		.grid-icone > ul{
+			text-align: center;
+			background: transparent;
+			line-height:normal;
+			margin-top: 1.0rem;
+		}
+		.grid-icone > ul li{
+			display: block;  
+			width: calc(50% / 4 );
+			line-height:50%;
 		}
 	}
